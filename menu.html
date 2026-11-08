@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#25221e">
+  <meta name="description" content="تصفح منيو مذاق المكان: قهوة مختصة ومشروبات باردة وحلويات طازجة.">
+  <title>منيو مذاق المكان | مِداد</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="menu.css">
+  <script src="menu.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="back-link" href="index.html#work"><span aria-hidden="true">←</span> العودة إلى مِداد</a>
+      <a class="studio-mark" href="index.html" aria-label="مِداد، استوديو للحلول الرقمية"><span>م</span> مِداد</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="cafe-title">
+      <div class="intro-content">
+        <p class="eyebrow">قهوة مختصة · لحظات تستحق التمهّل</p>
+        <h1 id="cafe-title">مذاق المكان</h1>
+        <p class="intro-copy">من أول رشفة إلى آخر لقمة، اختر شيئاً تحبه.</p>
+        <div class="cafe-details"><span><span aria-hidden="true">◷</span> يومياً · ٧ ص — ١١ م</span><span><span aria-hidden="true">⌖</span> صنع بحب، في كل مكان</span></div>
+      </div>
+      <div class="intro-art" role="img" aria-label="فنجان قهوة في أجواء دافئة"><span class="art-ring"></span><span class="art-cup">☕</span><span class="art-caption">GOOD COFFEE<br>GOOD MOMENTS</span></div>
+    </section>
+
+    <section class="menu-section" aria-labelledby="menu-heading">
+      <div class="section-heading"><div><p class="eyebrow">اختياراتنا</p><h2 id="menu-heading">القائمة</h2></div><p class="section-note">حضّرناها بعناية، لتجد ما يناسب مزاجك.</p></div>
+
+      <div class="menu-tools">
+        <label class="search-box"><span aria-hidden="true">⌕</span><span class="visually-hidden">ابحث في القائمة</span><input id="menuSearch" type="search" placeholder="ابحث عن مشروب أو حلى..." autocomplete="off"></label>
+        <div class="category-list" role="group" aria-label="تصفية حسب التصنيف">
+          <button class="category-button is-active" type="button" data-category="all" aria-pressed="true">الكل</button>
+          <button class="category-button" type="button" data-category="coffee" aria-pressed="false">قهوة</button>
+          <button class="category-button" type="button" data-category="cold" aria-pressed="false">مشروبات باردة</button>
+          <button class="category-button" type="button" data-category="dessert" aria-pressed="false">حلويات</button>
+        </div>
+      </div>
+
+      <p class="results-count" id="resultsCount" aria-live="polite"></p>
+      <div class="menu-grid" id="menuGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <span class="empty-icon" aria-hidden="true">⌕</span>
+        <h3>ما لقينا هذا الصنف</h3>
+        <p>جرّب كلمة ثانية أو اعرض كل الأصناف.</p>
+        <button class="reset-button" id="resetFilters" type="button">عرض القائمة كاملة</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>مذاق المكان</span><span>منيو تجريبي · صُنع بعناية من مِداد</span></footer>
+</body>
+</html>
